@@ -51,4 +51,4 @@ jobs:
           echo "✅ Conexión exitosa desde GitHub Actions"
           hostname
           whoami
-          uptime
+          uptime# docker push ghcr.io/jorgeminda/landing:1.0.0
