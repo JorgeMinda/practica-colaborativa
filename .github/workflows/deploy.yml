@@ -30,9 +30,7 @@ jobs:
     - name: Login en GitHub Container Registry
       run: echo "${{ github.token }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
     
-    # Ahora que el login será exitoso con los permisos correctos, este paso pasará sin error:
-    - name: Publicar la imagen creada
-      run: docker push ghcr.io/jorgeminda/landing:1.0.0 
+
 
     - name: 🧾 Mostrar variables básicas (solo locales, no secretos)
       run: |
